@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 select.onchange = function(){
     view.innerHTML = ''
     if (this.value !== '0' && this.value !== '') {
-        let link = `https://${location.hostname}/0${this.value}`
+        //let link = `https://${location.hostname}/0${this.value}`
+        let link = `https://${location.hostname}`
         generar_msg(link)
         show_url(link)
     } else {
